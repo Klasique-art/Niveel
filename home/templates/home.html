@@ -1,0 +1,316 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- header and nav -->
+<nav>
+    <a href="{% url 'home' %}" class="logo" aria-label="logo">
+        <img src="{% static 'img/logo.jpg' %}" alt="logo">
+    </a>  
+    <button class="menu-icon" aria-label="menubar button">
+        <i class="fas fa-bars"></i>
+    </button> 
+    <ul class="nav-list">
+        <li>
+            <a href="#home">home</a>
+        </li>
+        <li>
+            <a href="#about">about</a>
+        </li>
+        <li>
+            <a href="#service">services</a>
+        </li>
+        <li>
+            <a href="#team">team</a>
+        </li>
+        <li>
+            <a href="#contact">contact</a>
+        </li>
+    </ul>
+</nav>
+<header id="home" class="home">
+    <h1 class="banner">Nivee LLC</h1>
+    <h3 class="slogan" style="max-width: 800px;">We are a registered Limited Liability Company in the state of Delaware with a global reach. We pride 
+        ourselves on the premises of saving our clients time and money.</h3>
+    <a href="#about">about us</a>
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    
+    <div class="fas fa-coins nut1"></div>
+    <div class="fas fa-coins nut2"></div>
+</header>
+<!-- end of header and nav-->
+<!-- about -->
+<section id="about" class="about">
+    <h1 class="heading">about us</h1>
+    <div class="row">
+      <div class="content">
+        <h3>Nivee LLC</h3>
+        <p>We are a Delaware registered limited liability company with a global reach. We pride ourselves on the premises of saving our clients time and money. From bookkeeping to taxation, we also provide Store Buffet for shoppers convenience. We are and will always be on the mission to providing you a better and easy lives.</p>
+        <!-- <a href="{% url 'about' %}" class="all-btns">read more</a> -->
+      </div>
+      <div class="image">
+        <img src="{% static 'img/about.svg' %}" alt="toon image of a woman with a monitor">
+      </div>
+    </div> 
+</section>
+<!-- end of about -->
+<!-- services -->
+<section id="service" class="service">
+    <h1 class="heading">our services</h1>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/img2.svg' %}" alt="">
+        </div>
+        <div class="content">
+            <h3>Bookkeeping</h3>
+            <p>We provide daily, monthly, quarterly and annual bookkeeping services to small and medium size firms in 
+                North America and Europe.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>Taxation</h3>
+            <p>We provide individual and corporate tax solutions in North America. We also prepare individual tax 
+                returns for citizens living abroad.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/tax.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="row">        
+        <div class="image">
+            <img src="{% static 'img/img7.svg' %}" alt="">
+        </div>
+        <div class="content">
+            <h3>Store Buffet</h3>
+            <p>We own and manage this ecommerce platform for all kinds of shoppers who are looking to save time 
+                and money. Our platform makes it easy for shoppers to virtually search across all retail websites and 
+                compare prices, products, shipping, etc. Retailers on the other hand, are benefiting from less returns 
+                from customers as the app enables buyers to make an informed decisions prior to buying. Also, buyers 
+                can easily monitor rollbacks and new deals.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>Software Development</h3>
+            <p>We develop and market software for individuals and companies who are looking to bring efficiency to 
+                their lives and businesses. Our team of engineers are subject matter experts in over 32 programming 
+                languages.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/img8.svg' %}" alt="">
+        </div>
+    </div>
+</section>    
+<!-- end of services -->
+<!-- team -->
+<section id="team" class="team">
+    <h1 class="heading">our team</h1>
+    <div class="row">
+        <!-- Start -->
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/pic2.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>Dr Victoria Stevens, Chair</h3>
+                <div class="text-box">
+                    Dr Stevens is a physician who grew up doing bookkeeping for her family business. With her diverse 
+                    background, our team stand to enjoy her perspective and the healthcare and wellness clients she brings 
+                    to the table.
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card">
+            <div class="image">
+            <img src="{% static 'img/pic1.png' %}" alt="person image">
+            </div>
+            <div class="info">
+            <h3>Tim Starke, CEO</h3>
+            <div class="text-box">
+                Tim is a certified public accountant with over 10 years of experience in accounting, finance and taxation. 
+                    His desire to help people achieve financial independence led to the formation of Nivee LLC.
+            </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/ind.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>Nicholas Kuma, CFO</h3>
+                <div class="text-box">
+                    Our CFO has a background in both insurance and investment banking. He has a degree in accounting and taxation with over a decade experience serving clients on the west coast.
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/pic3.png' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>Sarah Arkyo, COO</h3>
+                <div class="text-box">
+                    Our COO has a degree in accounting. She is also an IBM certified software engineer with over 15 years of
+                    experience.
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card">
+            <div class="image">
+                <img src="{% static 'img/wom.jpg' %}" alt="person image">
+            </div>
+            <div class="info">
+                <h3>Riley Coxen, Executive Assistant</h3>
+                <div class="text-box">
+                    Riley has over 20 years’ experience on Wall Street serving as secretary to managing directors. She also 
+                    worked as a law firm clerk for 5 years in Chicago.
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</section>    
+<!-- end of team -->
+<!-- contact -->
+<section id="contact" class="contact">
+    <h1 class="heading">contact us:</h1>
+    <p style="text-align: center; color: white; text-transform: capitalize; margin-bottom: 2rem;">Send us a message via email:</p>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/img5.svg' %}" alt="toon image">
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="email" placeholder="Your email">
+                <textarea name="" id="" cols="30" rows="10" maxlength="400" placeholder="Message"></textarea>
+                <input type="submit" class="all-btns" value="send">
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end of contact -->
+<!-- faq -->
+<section id="faq" class="faq">
+    <h1 class="heading">FAQs/</h1>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'img/faq.svg' %}" alt="">
+        </div>
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>Is Store Buffet subscription based app?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>No, you can download it for free from both google play and AppStore. You don’t need subscription to keep using it. </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>What is unique about Store Buffet? </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Its user friendliness and the ability to search through hundreds and thousands of websites to provide you a comparative information on your phone, tablet, iPad, etc. for an informed decision on your purchase.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>Do you charge for tax estimates?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>No, we don’t. You only pay after we prepare the returns.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>Is my information secured? </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Yes, each taxpayer has a portal from which you will have a secured communication with our office. You can upload and download your documents with ease.</p>
+                </div>
+            </div>
+            <!-- start -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How do you communicate with clients overseas/other states? </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Our clients portal enables a real time communication with our clients anywhere in the world. If you are not available for real time communication, you can always respond to our calls, texts and emails anytime. </p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How do I get a copy of my tax returns? </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Your returns and other documents are always available for download from the portal. We are environmentally friendly and so we don’t mail paper returns unless it’s absolutely necessary to do so.</p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>I have a software idea but don’t know how to proceed, can you help? </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Yes, we provide consultations for people who want to make their dreams a reality.</p>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How much do you charge to develop a software?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>It all depends. It could be zero or thousands. If you partner with us for a stake in your business, we charge zero. Nonetheless, our developer fees range from $23-50/hr.</p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</section>
+<!-- end of faq -->
+<!-- contact info -->
+<section class="cont-info">
+    <div class="cont-info-wrapper">
+        <h2>Contact Us:
+/        </h2>
+        <br>
+        <ul>
+            <li>1255 Magie Ave, Suite 352
+            </li>
+            <li>Union, NJ 07083</li>
+            <li>Phone: (908) 416-8408</li>
+            <li>Email: adm@niveellc.com</li>
+            <li>Hours: M-F, 8am to 5pm ET</li>
+        </ul>
+    </div>
+</section>
+<!-- end of contact info -->
+{% endblock %}
